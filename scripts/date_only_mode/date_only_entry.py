@@ -44,8 +44,9 @@ def main(data_path, num_elo_iteration, num_schedule_simulations):
         # 3) run the Elo sims on that schedule
         npi_dfs = []
         for sim in range(num_elo_iteration):
+            elo = elo_base.copy()
             data = predict_result(
-                elo_base,
+                elo,
                 schedule,
                 scaling_factor=400,
                 update_factor=133

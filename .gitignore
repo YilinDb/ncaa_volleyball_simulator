@@ -1,0 +1,9 @@
+# Ignore combined season CSV
+/data/combined_simulated_season.csv
+
+# Ignore processed results in various modes
+/scripts/no_result_mode/data/processed_result.csv
+/scripts/full_match_mode/data/processed_result.csv
+
+# Ignore everything in the date‑only mode result folder
+/scripts/date_only_mode/result/

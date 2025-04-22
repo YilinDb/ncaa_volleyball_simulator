@@ -19,7 +19,8 @@ def main(data_path, num_elo_iteration):
 
     npi_results = []
     for sim in range(num_elo_iteration):
-        data = predict_result(elo_base, schedule, scaling_factor=400, update_factor=133)
+        elo = elo_base.copy()
+        data = predict_result(elo, schedule, scaling_factor=400, update_factor=133)
         try:
             valid_teams = load_teams(data)
             games = load_games(data, valid_teams)
