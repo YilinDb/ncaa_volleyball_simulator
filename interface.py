@@ -257,8 +257,8 @@ if st.session_state.reference_season_df is not None:
                     ["python",
                      "scripts/date_only_mode/date_only_entry.py",
                      "data/combined_simulated_season.csv",
-                     str(schedule_num_simulations),
-                     str(elo_num_simulations)],
+                     str(elo_num_simulations),
+                     str(schedule_num_simulations)],
                     capture_output=True, text=True
                 )
                 if proc.returncode != 0:
