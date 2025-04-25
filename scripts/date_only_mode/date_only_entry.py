@@ -35,7 +35,7 @@ def main(data_path, num_elo_iteration, num_schedule_simulations):
         
         # 1) generate & fix one schedule
         schedule = schedule_template.copy()
-        schedule = fill_schedule(schedule, elo_base)
+        fill_schedule(schedule, elo_base)
 
         # 2) save raw schedule CSV
         schedule_csv = schedules_dir / f"schedule_{sched+1}.csv"
