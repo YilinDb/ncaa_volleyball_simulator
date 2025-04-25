@@ -32,9 +32,10 @@ def main(data_path, num_elo_iteration, num_schedule_simulations):
 
     for sched in range(num_schedule_simulations):
         print(f"\n=== Running schedule simulation {sched+1}/{num_schedule_simulations} ===")
-
+        
         # 1) generate & fix one schedule
-        schedule = fill_schedule(schedule_template, elo_base)
+        schedule = schedule_template.copy()
+        schedule = fill_schedule(schedule, elo_base)
 
         # 2) save raw schedule CSV
         schedule_csv = schedules_dir / f"schedule_{sched+1}.csv"
