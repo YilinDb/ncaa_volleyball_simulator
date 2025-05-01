@@ -40,7 +40,7 @@ def main(data_path, num_elo_iteration, num_schedule_simulations):
         # 2) save raw schedule CSV
         schedule_csv = schedules_dir / f"schedule_{sched+1}.csv"
         schedule.to_csv(schedule_csv, index=False)
-        print(f"Saved raw schedule → {schedule_csv}")
+        print(f"Saved raw schedule to {schedule_csv}")
 
         # 3) run the Elo sims on that schedule
         npi_dfs = []
@@ -84,7 +84,7 @@ def main(data_path, num_elo_iteration, num_schedule_simulations):
         # 5) save merged NPI results CSV
         npi_csv = npi_dir / f"schedule_{sched+1}_npi.csv"
         merged.to_csv(npi_csv, index=False)
-        print(f"Saved merged NPIs → {npi_csv}")
+        print(f"Saved merged NPIs to {npi_csv}")
 
     print("All schedule simulations complete.")
 
