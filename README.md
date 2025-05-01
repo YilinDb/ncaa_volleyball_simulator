@@ -9,7 +9,7 @@ Parts of the NPI calculation are adapted from the **D3 Datacast** team.
 
 ## 🎯 Overview
 
-This simulator enables season simulations for NCAA Division III Women’s Volleyball teams.
+This simulator enables season simulations for NCAA Division III Women’s Volleyball teams, and it returns simulated NPIs at the end.
 
 ---
 
